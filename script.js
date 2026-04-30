@@ -1,87 +1,108 @@
-let a = Number(prompt("son kiriting"));
 
-if (a % 2 == 0){
-    console.log("juft son");
+let son = prompt("son kiriting:");
+
+if (son % 2 === 0) {
+    console.log("Juft son");
 } else {
-    console.log("toq son");
+    console.log("Toq son");
 }
 
-// let son1 = (prompt("Birinchi sonni kiriting:"));
-// let son2 = (prompt("Ikkinchi sonni kiriting:"));
+let a = prompt("Birinchi sonni kiriting:");
+let b = prompt("Ikkinchi sonni kiriting:");
 
-// son1 = Number(son1);
-// son2 = Number(son2);
+if (a > b) {
+    console.log("Katta son: " + a);
+} else if (b > a) {
+    console.log("Katta son: " + b);
+} else {
+    console.log("Sonlar teng");
+}
 
-// if (son1 > son2) {
-//     console.log("kattasi: " + son1);
-// } else if (son2 > son1) {
-//   console.log("kattasi: " + son2);
-// }
+let ball = prompt("Imtihon balingizni kiriting:");
 
-// let tugilganYil = prompt("Tug‘ilgan yilingizni kiriting:");
+if (ball > 90) {
+    console.log("A'lo");
+} else if (ball > 70) {
+    console.log("Yaxshi");
+} else if (ball > 50) {
+    console.log("Qoniqarli");
+} else {
+    console.log("Yiqildi");
+}
 
-// let hozirgiYil = new Date().getFullYear();
+let c = prompt("son kiriting:");
+for (let i = 1; i <= c; i++) {
+    let kvadrat = i * i;
+    console.log(i + " ning kvadrati: " + kvadrat);
+}
 
-
-// let yosh = hozirgiYil - tugilganYil;
-
-
-// alert("Sizning yoshingiz: " + yosh);
-
-
-// let a = prompt("1-sonni kiriting:");
-// let b = prompt("2-sonni kiriting:");
-// let c = prompt("3-sonni kiriting:");
-
-// let max = a;
-
-// if (b > max) {
-//     max = b;
-// }
-// if (c > max) {
-//     max = c;
-// }
-
-// alert("Eng katta son: " + max);
+let d = prompt("soni kiriting:");
+for (let i = 10; i >= 1; i--) {
+    console.log(i);
+}
 
 
-// let son1 = Number(prompt("Birinchi sonni kiriting:"));
-// let son2 = Number(prompt("Ikkinchi sonni kiriting:"));
-// let amal = prompt("Amalni kiriting (+, -, *, /):");
 
-// let natija;
-
-// if (amal === "+") {
-//     natija = son1 + son2;
-// } else if (amal === "-") {
-//     natija = son1 - son2;
-// } else if (amal === "*") {
-//     natija = son1 * son2;
-// } else if (amal === "/") {
-//     if (son2 !== 0) {
-//         natija = son1 / son2;
-//     } else {
-//         natija = "0 ga bo‘lish mumkin emas!";
-//     }
-// } else {
-//     natija = "Noto‘g‘ri amal kiritildi!";
-// }
-
-// alert("Natija: " + natija);
+for (let i = 1; i <= 100; i++) {
+    if (i % 5 === 0) {
+        console.log(i);
+    }
+}
 
 
-// let n = Number(prompt( "n ni kiriting")); 
-// let yigindi = 0;
+let n = prompt("n sonini kiriting:");
 
-// for (let i = 1; i <= n; i++) {
-//     yigindi += i;
-// }
+n = Number(n);
 
-// console.log("yigindi:", yigindi); 
+for (let i = 1; i <= n; i++) {
+    if (i % 2 !== 0) {
+        console.log(i);
+    }
+}
 
 
-// let n = Number(prompt("Son kiriting:"));
 
-// for (let i = 1; i <= 10; i++) {
-//     console.log(n + " x " + i + " = " + (n * i));
-// }
+let oy = prompt("1 dan 12 gacha bo'lgan oy raqamini kiriting:");
+
+oy = Number(oy);
+
+switch (oy) {
+    case 1:
+        alert("Yanvar");
+        break;
+    case 2:
+        alert("Fevral");
+        break;
+    case 3:
+        alert("Mart");
+        break;
+    case 4:
+        alert("Aprel");
+        break;
+    case 5:
+        alert("May");
+        break;
+    case 6:
+        alert("Iyun");
+        break;
+    case 7:
+        alert("Iyul");
+        break;
+    case 8:
+        alert("Avgust");
+        break;
+    case 9:
+        alert("Sentyabr");
+        break;
+    case 10:
+        alert("Oktyabr");
+        break;
+    case 11:
+        alert("Noyabr");
+        break;
+    case 12:
+        alert("Dekabr");
+        break;
+    default:
+        alert("Xato! Iltimos, faqat 1 dan 12 gacha bo'lgan son kiriting.");
+}
